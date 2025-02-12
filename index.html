@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Sai Nijith</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #1a001f, #4a004e);
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .profile-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 50px;
+            border-radius: 20px;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            width: 90%;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+        }
+        .special-text {
+            font-size: 22px;
+            font-weight: 600;
+            color: #ff4081;
+            margin-top: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+            position: relative;
+        }
+        button {
+            font-size: 20px;
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .yes {
+            background: #ff4081;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        .yes:hover {
+            background: #e60073;
+        }
+        .no {
+            background: #dc3545;
+            color: white;
+            position: absolute;
+            left: 60%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .no:hover {
+            position: absolute;
+            left: calc(10% + (80% * Math.random()));
+            top: calc(10% + (80% * Math.random()));
+            transition: left 0.3s, top 0.3s;
+        }
+        .instagram {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .instagram a {
+            color: yellow;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .instagram img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/180" alt="Sai Nijith" class="profile-img">
+        <h2> The One You’ve Been Dreaming Of 💘</h2>
+        <p class="special-text">🔥 A Perfect Blend of Passion, Charm, and Adventure 🔥</p>
+        <p>💖 Romantic at heart, always making you feel special</p>
+     
+        
+        <p> Deep conversations & spontaneous adventures guaranteed</p>
+        <p> Ready to explore the world and build a love story together</p>
+        <p>Passionate cricket enthusiast who enjoys both watching and playing the game</p>
+        <p> Meeting new people and creating unforgettable memories</p>
+        <p class="special-text">💫 Love is an adventure – Are you ready to take the first step? 💫</p>
+        
+        <div class="buttons">
+            <button class="yes" onclick="alert('Great choice! Let’s create unforgettable moments together! 💕')">Yes 💖</button>
+            <button class="no">No 💔</button>
+        </div>
+        
+        <div class="instagram">
+            <a href="https://instagram.com/nijith_45" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon">
+                @nijith_45
+            </a>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.no').addEventListener('mouseover', function() {
+            this.style.left = Math.random() * 80 + '%';
+            this.style.top = Math.random() * 80 + '%';
+        });
+    </script>
+</body>
+</html>
+
